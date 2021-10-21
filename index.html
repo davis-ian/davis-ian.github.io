@@ -1,22 +1,49 @@
 <!DOCTYPE html>
-<html>
+  <html>
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.11.0/build/cssnormalize/cssnormalize-min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='portfolio.css') }}"/>
-
         <title>Ian Davis</title>
-        </head>
-        <body>
-            <header>
-                <h1>Welcome to my portfolio</h1>
-            </header>
-            <main>
+        
+    </head>
+    
+    <body>
+        <header>
+            <h1>Hi, I'm Ian.</h1>
+        </header>
+        <main>         
+            <div  class="about">
+                <img src="code1.jpg">
+                <p>
+                    I'm currently a student in PDX Code Guild's Full-Stack Developer Bootcamp and in the proccess of relocating to sunny Austin, Tx.
+                    Before finding my passion in web development I studied graphic design and understand the impact a great design can have. 
+                    As an aircraft mechanic, I learned to sharpen my attention to detail and I use that skill everyday to 
+                    tackle any problems that need solving. If im not grinding through code,  I can be found shredding some tasty licks 
+                    my my guitar or exploring the city.
+                </p>
+            </div>
+            <div class="skills">
+                <ul>Dev Skills
+                    <li>Python</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Flask</li>   
+                </ul>
 
-            </main>
-            <footer>
+                <ul>Work History
+                    <li>US Air Force -- Aircraft Mechanic - 2012-2018</li>
+                    <li>New Seasons Market -- Lead - 2019-2021</li>                     
+                </ul>
 
-            </footer>
-        </body>
-</html>
+                <ul>Education History
+                    <li>PDX Code Guild -- Full-Stack Developer Bootcamp</li>
+                    <li>PCC -- Graphic Design Courses</li>
+                </ul>
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+  </html>
