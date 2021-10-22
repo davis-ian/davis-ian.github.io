@@ -106,7 +106,8 @@ sidenav {
         width: 200px;
         position: fixed;
         color: white;
-        justify-content: space-around
+        justify-content: space-around;
+        overflow-x: hidden;
         
     }
     
