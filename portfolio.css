@@ -22,7 +22,9 @@ body {
     margin: 0;
     font-family: "raleway", sabs-serif;
 }
-
+sidenav {
+    display: none;
+}
 
 .greet {
     font-size: 30px;
@@ -33,16 +35,18 @@ body {
 }
 .greet img {
     width: 70%;
+    margin: 2em;
     
 }
-.gwrapper {
+.gwrapper-mobile {
     background-color: white;
     color: #050505;
     width: 90%;
     box-shadow: 10px 10px;
     border: 1px solid black
-    
-
+}
+.gwrapper-desk {
+    display: none;
 }
 .projects {
     padding: 3em 2em;
@@ -61,6 +65,7 @@ body {
     box-shadow: 5px 5px black;
     margin-bottom: 2em;
     padding: 2em;
+    font-size: 20px;
 }
 .skills {
     background-color: #732B1A;
@@ -90,4 +95,40 @@ body {
 }
 .contact hr {
     width: 90%;
+}
+
+@media (min-width: 600px) {
+    sidenav {
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        height: 100%; 
+        width: 200px;
+        position: fixed;
+        color: white;
+        justify-content: space-around
+        
+    }
+    
+    header {
+        margin-left: 200px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .greet {
+        max-width: 70%;
+    }
+    main{
+        margin-left: 200px
+    }
+    .projects {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        
+    }
+    .projects div {
+        max-width: 45%;
+    }
 }
