@@ -1,7 +1,7 @@
 /* 
-#262626;
-#BFBDB8;
-#735C40;
+#969487
+#820002
+#3C8A8C
 */
 
 
@@ -17,34 +17,32 @@ img {
     max-width: 100%;
 }
 body {
-    background:#262626;
-    margin: 1em;
     text-align: center;
-    color: #262626;
+    padding: 0;
+    margin: 0;
+    font-family: "raleway", sabs-serif;
 }
-header {
-    color: #BFBDB8;
+
+.greet {
     font-size: 30px;
-    
-}
-.skills {
-    text-align: left;
-}
-.projects div {
-    background-color: #BFBDB8;
-    border-radius: 15px;
-    border: 2px solid #735C40;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 1em;
 }
-.projects div img {
-    border: 2px solid #262626;
+.greet img {
+    width: 70%;
+    
 }
-.about {
-    color: #BFBDB8
+.gwrapper {
+    background-color: white;
+    color: #050505;
+    width: 70%;
+    box-shadow: 10px 10px;
+    border: 1px solid black
+    
+
 }
-.skills {
-    color: #BFBDB8
-}
-.contact {
-    color: #BFBDB8
+.projects{
+    padding: 2em;
 }
