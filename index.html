@@ -3,17 +3,63 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='portfolio.css') }}"/>
+        <link rel="stylesheet" type="text/css" href="portfolio.css"/>
         <title>Ian Davis</title>
         
     </head>
     
     <body>
         <header>
-            <h1>Hi, I'm Ian.</h1>
+            <div class="greet">
+                <h1>Hi, I'm Ian.</h1>
+                <h2>I write code.</h2>
+                <h2>Check it out. </h2>
+            </div>
+              
         </header>
         <main>         
+            
+            <div class="projects">
+                <div class="unit">
+                    <h2>Unit Converter Web Page</h2>
+                    <p>This is a unit convert web page.</p>
+                    <hr>
+                    <img src="unit converter.png"/>   
+                </div>
+                <br>
+                <div class="building">
+                    <h2>Blog Website</h2>
+                    <p>This is a responsive blog page I made using flask.</p>
+                    <hr>
+                    <img src="building.png"/>   
+                </div>
+                <br>
+                <div class="burrito">
+                    <h2>Burrito Order Form</h2>
+                    <p>This is a flask base web page that uses post and get requests to send a customers burrito order to backend.</p>
+                    <hr>
+                    <img src="burrito.png"/>                   
+                </div>
+                <br>
+                <div class="bella">
+                    <h2>Company Home Page</h2>
+                    <p>This is a product web page.</p>
+                    <hr>
+                    <img src="bellas.png"/>                   
+                </div>
+                <br>
+                <div class="dinner">
+                    <h2>Dinner Decider App</h2>
+                    <p>This is an app I created using tkinter. Using Yelp's API it returns a random local restaraunt based on users input parameters including;location, radius, and category. Includes buttons with direct url links to order.</p>
+                    <hr>
+                    <img src="dinner.png"/>
+                </div>
+            </div>
+            <br>
+            
+            <br>
             <div  class="about">
+                <h2>About Me</h2>
                 <img src="code1.jpg">
                 <p>
                     I'm currently a student in PDX Code Guild's Full-Stack Developer Bootcamp and in the proccess of relocating to sunny Austin, Tx.
@@ -31,19 +77,20 @@
                     <li>Flask</li>   
                 </ul>
 
-                <ul>Work History
-                    <li>US Air Force -- Aircraft Mechanic - 2012-2018</li>
-                    <li>New Seasons Market -- Lead - 2019-2021</li>                     
-                </ul>
-
-                <ul>Education History
+                <ul>Work/ Education
                     <li>PDX Code Guild -- Full-Stack Developer Bootcamp</li>
                     <li>PCC -- Graphic Design Courses</li>
+                    <li>US Air Force -- Aircraft Mechanic - 2012-2018</li>
                 </ul>
+            </div>
+            <div class="contact">
+                <h4>E-mail: iancdavis.1@gmail.com</h4>
+                <h4>Github: davis-ian</h4>
+                
             </div>
         </main>
         <footer>
-
+            
         </footer>
     </body>
   </html>

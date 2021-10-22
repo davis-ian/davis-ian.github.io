@@ -1,0 +1,50 @@
+/* 
+#262626;
+#BFBDB8;
+#735C40;
+*/
+
+
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+body {
+    background:#262626;
+    margin: 1em;
+    text-align: center;
+    color: #262626;
+}
+header {
+    color: #BFBDB8;
+    font-size: 30px;
+    
+}
+.skills {
+    text-align: left;
+}
+.projects div {
+    background-color: #BFBDB8;
+    border-radius: 15px;
+    border: 2px solid #735C40;
+    padding: 1em;
+}
+.projects div img {
+    border: 2px solid #262626;
+}
+.about {
+    color: #BFBDB8
+}
+.skills {
+    color: #BFBDB8
+}
+.contact {
+    color: #BFBDB8
+}
