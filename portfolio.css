@@ -43,6 +43,41 @@ body {
     
 
 }
-.projects{
+.projects {
+    padding: 3em 2em;
+    background-color: #3F7373;
+
+}
+.projects h2 {
+    color: #732B1A;
+}
+.projects div {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 5px 5px black;
+    margin-bottom: 2em;
+}
+.skills {
+    background-color: #732B1A;
     padding: 2em;
+    color: white;
+}
+.skills hr{
+    width: 90%;
+    color: black;
+}
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em;
+    width: 100%;
+    font-size: 20px;
+}
+.awrapper {
+    border: 1px solid black;
+    box-shadow: 10px 10px black;
 }
