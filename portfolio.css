@@ -23,6 +23,7 @@ body {
     font-family: "raleway", sabs-serif;
 }
 
+
 .greet {
     font-size: 30px;
     display: flex;
@@ -81,4 +82,12 @@ body {
 .awrapper {
     border: 1px solid black;
     box-shadow: 10px 10px black;
+    padding: 2em;
+}
+.contact {
+    background-color: #A68F72;
+    padding: 2em;
+}
+.contact hr {
+    width: 90%;
 }
