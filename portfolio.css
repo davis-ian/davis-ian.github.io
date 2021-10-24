@@ -4,8 +4,7 @@
 #3C8A8C
 */
 
-
-
+/* GENERAL STYLES */
 html {
     box-sizing: border-box;
 }
@@ -20,52 +19,96 @@ body {
     text-align: center;
     padding: 0;
     margin: 0;
-    font-family: "raleway", sabs-serif;
+    font-family: "raleway", sans-serif;
+    
+}
+header {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("pdx7.jpg");
+    background-size:cover;
+    background-position: center;
+}
+header h5{
+    border-radius: 10px;
+    width: 200px;
+    align-self:flex-end;
+    padding: 1em;
+    margin-top: 0;
+    position: fixed;
+    background-color: black;
+    color: white;
+    box-shadow: 5px 5px 5px black;
+    
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+footer {
+    text-align: left;
+    background-color: #732B1A;
+    color: white;
+    padding: 2em;
 }
 sidenav {
     display: none;
 }
 
+/* CLASS STYLES */
+.project_wrap a {
+    color: white;
+    border-radius: 10px;
+    width: 100px;
+    align-self: center;
+    box-shadow: 5px 5px 5px gray;
+    background:linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+    background-color: #732B1A; 
+}
 .greet {
     font-size: 30px;
+    color: white;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 1em;
+    height: 100vh;
 }
 .greet img {
     width: 70%;
     margin: 2em;
     
 }
-.gwrapper-mobile {
-    background-color: white;
-    color: #050505;
-    width: 90%;
-    box-shadow: 10px 10px;
-    border: 1px solid black
-}
-.gwrapper-desk {
-    display: none;
-}
+
 .projects {
+    background-color:#3F7373;
+    color: black;
+    padding: 2em;
+}
+.projects h1 {
+    color: white; 
+}
+.projects hr {
+   width: 90%;
+}
+.project_wrap {
     padding: 3em 2em;
     background-color: #3F7373;
 
 }
-.projects h2 {
+.project_wrap h2 {
     color: #732B1A;
 }
-.projects div {
-    border: 2px solid black;
+.project_wrap div {
+    
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     background-color: white;
-    box-shadow: 5px 5px black;
+    box-shadow: 5px 5px 5px black;
     margin-bottom: 2em;
     padding: 2em;
-    font-size: 20px;
 }
 .skills {
     background-color: #732B1A;
@@ -80,56 +123,88 @@ sidenav {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 2em;
+    align-items: center;
+    padding: 5em 3em;
     width: 100%;
     font-size: 20px;
+    background-color: #A68F72; 
 }
 .awrapper {
-    border: 1px solid black;
-    box-shadow: 10px 10px black;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px black;
     padding: 2em;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+
+}
+.awrapper img{
+    max-width: 50%;
 }
 .contact {
-    background-color: #A68F72;
+    background-color: #732B1A;
+    color: white;
     padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .contact hr {
     width: 90%;
 }
+#email {
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    width: 250px;
+    box-shadow: 5px 5px 5px black;
+}
 
 @media (min-width: 600px) {
+
+    /* GENERAL STYLES */
     sidenav {
         display: flex;
         flex-direction: column;
         background-color: black;
         height: 100%; 
-        width: 200px;
+        width: 150px;
         position: fixed;
-        color: white;
         justify-content: space-around;
-        overflow-x: hidden;
-        
-    }
-    
+        overflow-x: hidden;        
+    }    
     header {
-        margin-left: 200px;
-        display: flex;
-        justify-content: center;
+        margin-left: 150px;
+        
     }
 
-    .greet {
-        max-width: 70%;
-    }
     main{
-        margin-left: 200px
+        margin-left: 150px
     }
-    .projects {
+    footer{
+        margin-left: 150px;
+    }
+
+    /* CLASS STYLES */
+    .project_wrap {
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-evenly;
-        
+        justify-content: space-around;        
     }
-    .projects div {
-        max-width: 45%;
+    .project_wrap div {
+        width: 45%;
     }
+    .greet {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+    }
+    
+    @media (min-width: 1100px) {
+       
+    }
+
 }
