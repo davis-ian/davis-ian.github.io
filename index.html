@@ -3,10 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        <link rel="stylesheet" type="text/css" href="normalize.css/">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Amarante&family=Raleway&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" type="text/css" href="portfolio.css"/>
         <title>Ian Davis</title>
@@ -14,99 +15,95 @@
     </head>
     
     <body>
-        <sidenav>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-        </sidenav>
+        
         <header>
-            <h5>contact@iandavs.com</h5>
-            <div class="greet">
-
-                <!-- <img src="nash1.png"/> -->
-                
-                    <div class="gwrapper">
-                        <h1>Hi! I'm Ian,</h1>
-                        <h4>I'm a Full-Stack Developer with a passion for design.</h4>
-                        <h4>Check out my work &#11015</h4>
-                    </div>                 
+            <div class="logo">
+                <h4>iandavs.com</h4>
             </div>
+            <nav>
+                <a href="">Skills</a>
+                <a href="">Projects</a>
+                <a href="">About</a>
+                <a href="">Contact</a>
+            </nav>
+
+            <div class="greet"> 
+                
+                               
+                <h1>IAN DAVIS</h1>
+                
+            </div>
+            <div class='welcome'>
+                <p>Full-Stack Developer with a passion for design.</p>
+                <p>Welcome to my portfolio.</p>
+            </div>
+                           
               
         </header>
-        <main>         
+        <main> 
+            <div  class="about" id="about">
+                <div class="awrapper">
+                    <h1>About Me</h1>
+                    <img src="nash1.png">
+                    <p>
+                        I'm currently a student in PDX Code Guild's Full-Stack Developer Bootcamp, and in the proccess of relocating to sunny Austin, Tx.
+                        Before finding my passion in web development I studied graphic design and understand the impact a great design can have. 
+                        I strive to deliver products where development and design come together to provide intuitive UX with streamlined programs. 
+                        As an aircraft mechanic, I learned to sharpen my attention to detail and I use that skill everyday to 
+                        tackle any problems that need solving. If I'm not grinding through code,  I can be found laying down some tasty licks 
+                        on my guitar or exploring the city.
+                    </p>
+                </div>
+            </div>        
                        
             <div class="skills" id="skills">
+                
                 <h1>Here's what I can bring to the table</h1>
                 <hr>
-                <h2>Technical Skills</h2>
-                <h4>Python</h4>
-                <h4>HTML</h4>
-                <h4>CSS</h4>
-                <h4>Flask</h4>
-                <hr>
+                <div class='skillswrap'>
+                    <div class='skill1'>
+                        <h2><u>Technical Skills</u></h2>
+                        
+                        <h4>Python</h4>
+                        <h4>HTML</h4>
+                        <h4>CSS</h4>
+                        <h4>Flask</h4>
+                    
+                        
+                    </div>
+                    <div class='skill2'>
+                        <h2><u>Experience</u></h2>
+                        
+                        <h4>PDX Code Guild Full-Stack Dev Bootcamp</h4>
+                        <h4>PCC Graphic Design Courses</h4>
+                        <h4>Aircraft mechanic for US Air Force (6yrs)</h4>
 
-                <h1>Experience</h1>
-                <h4>PDX Code Guild Full-Stack Dev Bootcamp</h4>
-                <h4>PCC Graphic Design Courses</h4>
-                <h4>Aircraft mechanic for US Air Force (6yrs)</h4> 
-                <hr>
+                    </div>
 
-                <h1>Other Attributes</h1>
-                <h4>Great under pressure</h4>
-                <h4>An absolute joy to be around</h4>
-                <h4><del>Exelent typing skills</del></h4>
-                <h4>Pretty good typing skills</h4>
+                    <div>
+                    <h2><u>Other Attributes</u></h2>
+                    
+                    <h4>Great under pressure</h4>
+                    <h4>An absolute joy to be around</h4>
+                    <h4><del>Exelent typing skills</del></h4>
+                    <h4>Pretty good typing skills</h4>
+                    
+                    </div>
+                </div>
+                <hr>
             </div>
             <div class="projects" id="projects">
-                <h1>Here's what I've been working on</h1>
-                <hr>
+                <h1><u>Here's what I've been working on</u></h1>
+                
                 <div class="project_wrap">
                     <div class="unit">
-                        <h2>Unit Converter Web App</h2>
-                        <p>This is a web app that takes user input and converts measurement into the requested output</p>
-                        <img src="unit converter.png"/>   
-                        <h4>HTML, CSS, Flask, GET/POST reqests</h4>
+                    
+                        
+                        <img src="Shorty6.png"/>   
+                        <br>
                         <a href="github">Github</a>
                     </div>
-                    <br>
-                    
-                    <div class="building">
-                        <h2>Blog</h2>
-                        <p>This is a responsive blog page that uses a for loop to post each entry. Highly scaleable, allows backend to format one post for end endless amount of entries.</p>
-                        <img src="building.png"/>  
-                        <h4>HTML, CSS, Flask, Python</h4>
-                        <a href="github">Github</a> 
-                    </div>
-                    <br>
-                    
-                    <div class="burrito">
-                        <h2>Burrito Order Form</h2>
-                        <p>This is a flask base web page that uses post and get requests to send a customers burrito order to backend. Similar structure could be used to build database from user input.</p>
-                        <img src="burrito.png"/>     
-                        <h4>HTML, CSS, Flask, GET/POST requests</h4> 
-                        <a href="github">Github</a>             
-                    </div>
-                    <br>
-                    
-                    <div class="bella">
-                        <h2>Company Home Page</h2>
-                        <p>This is a responsive web page for a mock company.</p>
-                        <img src="bellas.png"/>    
-                        <h4>HTML, CSS</h4>  
-                        <a href="github">Github</a>             
-                    </div>
-                    <br>
-                    
-                    <div class="dinner">
-                        <h2>Dinner Decider App</h2>
-                        <p>This is an app I created using Yelp's API. It solves the dreaded problem of deciding where to order food from. Includes a Chef's Choice option as well as an option to specify a catergory.
-                            Returns restaraunt info and a button linking to direct order url.
-                        </p>
-                        <img src="dinner.png"/>
-                        <h4>Python, Tkinter, API requests</h4>
-                        <a href="github">Github</a>
-                    </div>
+                <br>    
                 </div>
             </div>
             <div  class="about" id="about">

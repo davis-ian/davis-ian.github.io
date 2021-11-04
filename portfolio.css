@@ -14,35 +14,62 @@ html {
 img {
     display: block;
     max-width: 100%;
+    border-radius: 15px;;
+}
+header h1 {
+    font-family: 'Amarante';
+    color: #262626;
+    font-size: 150px;
+    margin: 0;
+    line-height: 80%;
 }
 body {
     text-align: center;
     padding: 0;
     margin: 0;
-    font-family: "raleway", sans-serif;
-    
+    font-family: "raleway", sans-serif;   
 }
 header {
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("pdx7.jpg");
     background-size:cover;
     background-position: center;
+    background-color: white;
 }
-header h5{
-    border-radius: 10px;
-    width: 200px;
-    align-self:flex-end;
-    padding: 1em;
-    margin-top: 0;
+
+header p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    line-height: 70%;
+    color: #262626;
+}
+
+header nav{
+    align-self: flex-end;
+    width: 50%;
+    height: 3em;
     position: fixed;
-    background-color: black;
-    color: white;
-    box-shadow: 5px 5px 5px black;
+    background-color: #262626;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+header .logo {
+    align-self: flex-start;
+    width: 50%;
+    height: 3em;
+    position: fixed;
+    background-color: #262626;
+    display: flex;
+    justify-content: f;
+    align-items: center;
+    color: #D9D6D0;
+    padding-left: 2em;
     
 }
 a {
-    color: white;
+    color: #D9D6D0;
     text-decoration: none;
 }
 footer {
@@ -51,69 +78,58 @@ footer {
     color: white;
     padding: 2em;
 }
-sidenav {
-    display: none;
-}
+
 
 /* CLASS STYLES */
+
+
 .project_wrap a {
-    color: white;
+    color: #D9D6D0;
     border-radius: 10px;
     width: 100px;
     align-self: center;
-    box-shadow: 5px 5px 5px gray;
-    background:linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
-    background-color: #732B1A; 
+    background-color: #262626; 
 }
 .greet {
-    font-size: 30px;
-    color: white;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-.greet img {
-    width: 70%;
-    margin: 2em;
+    justify-content: flex-end;
+    height: 50vh;
+    background-color: #D9D6D0;
+    padding-bottom: 1em;
     
+}
+.welcome {
+    height: 50vh;
+    background-color: #D9D6D0;
 }
 
 .projects {
-    background-color:#3F7373;
-    color: black;
+    background-color:#D9D6D0;
+    color: #262626;
     padding: 2em;
 }
-.projects h1 {
-    color: white; 
-}
+
 .projects hr {
    width: 90%;
 }
-.project_wrap {
-    padding: 3em 2em;
-    background-color: #3F7373;
 
-}
-.project_wrap h2 {
-    color: #732B1A;
-}
 .project_wrap div {
-    
-    border-radius: 15px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background-color: white;
-    box-shadow: 5px 5px 5px black;
-    margin-bottom: 2em;
-    padding: 2em;
+    flex-direction: column; 
 }
 .skills {
-    background-color: #732B1A;
+    background-color: #262626;
+    color: #D9D6D0;
+    height: 100vh;
     padding: 2em;
-    color: white;
+    line-height: 1.7em;
+    
+}
+.projects img {
+    height: 300px;
+    width: 500px;
+    background-size: cover;
 }
 .skills hr{
     width: 90%;
@@ -166,27 +182,6 @@ sidenav {
 @media (min-width: 600px) {
 
     /* GENERAL STYLES */
-    sidenav {
-        display: flex;
-        flex-direction: column;
-        background-color: black;
-        height: 100%; 
-        width: 150px;
-        position: fixed;
-        justify-content: space-around;
-        overflow-x: hidden;        
-    }    
-    header {
-        margin-left: 150px;
-        
-    }
-
-    main{
-        margin-left: 150px
-    }
-    footer{
-        margin-left: 150px;
-    }
 
     /* CLASS STYLES */
     .project_wrap {
@@ -194,15 +189,16 @@ sidenav {
         flex-flow: row wrap;
         justify-content: space-around;        
     }
-    .project_wrap div {
-        width: 45%;
-    }
-    .greet {
-        display: flex;
-        flex-direction: row-reverse;
-        width: 100%;
-    }
     
+    .skills{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+   .skillswrap {
+       display: flex;
+       justify-content: space-evenly;
+   }
     @media (min-width: 1100px) {
        
     }
