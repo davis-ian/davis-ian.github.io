@@ -74,8 +74,8 @@ a {
 }
 footer {
     text-align: left;
-    background-color: #732B1A;
-    color: white;
+    background-color: #D9D6D0;
+    color: #262626;
     padding: 2em;
 }
 
@@ -84,11 +84,11 @@ footer {
 
 
 .project_wrap a {
-    color: #D9D6D0;
+    color: #262626;
     border-radius: 10px;
     width: 100px;
     align-self: center;
-    background-color: #262626; 
+    background-color: #D9D6D0; 
 }
 .greet {
     display: flex;
@@ -105,9 +105,14 @@ footer {
 }
 
 .projects {
-    background-color:#D9D6D0;
-    color: #262626;
+    background-color:#262626;
+    color: #D9D6D0;
     padding: 2em;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .projects hr {
@@ -133,7 +138,7 @@ footer {
 }
 .skills hr{
     width: 90%;
-    color: black;
+    color: #262626;
 }
 .about {
     display: flex;
@@ -142,14 +147,15 @@ footer {
     align-items: center;
     padding: 5em 3em;
     width: 100%;
+    height: 100vh;
     font-size: 20px;
-    background-color: #A68F72; 
+    background-color: #D9D6D0; 
+    color: #262626;
 }
 .awrapper {
-    border-radius: 15px;
-    box-shadow: 10px 10px 10px black;
+    
     padding: 2em;
-    background-color: white;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -158,11 +164,11 @@ footer {
 
 }
 .awrapper img{
-    max-width: 50%;
+    max-width: 40%;
 }
 .contact {
-    background-color: #732B1A;
-    color: white;
+    background-color: #D9D6D0;
+    color: #262626;
     padding: 2em;
     display: flex;
     flex-direction: column;
