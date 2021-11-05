@@ -27,26 +27,27 @@ body {
     text-align: center;
     padding: 0;
     margin: 0;
-    font-family: "raleway", sans-serif;   
+    font-family: "Raleway", sans-serif;  
+     
 }
 header {
     display: flex;
     flex-direction: column;
     background-size:cover;
     background-position: center;
-    background-color: white;
+    
 }
 
 header p {
     font-family: 'Raleway', sans-serif;
     font-size: 25px;
-    line-height: 70%;
+    
     color: #262626;
 }
 
 header nav{
     align-self: flex-end;
-    width: 50%;
+    width: 51%;
     height: 3em;
     position: fixed;
     background-color: #262626;
@@ -71,6 +72,13 @@ header .logo {
 a {
     color: #D9D6D0;
     text-decoration: none;
+    font-family: 'Merriweather', serif;
+}
+main h1 {
+    font-family: 'Merriweather', serif;
+}
+main h2 {
+    font-family: 'Merriweather', serif;
 }
 footer {
     text-align: left;
@@ -102,17 +110,19 @@ footer {
 .welcome {
     height: 50vh;
     background-color: #D9D6D0;
+   
 }
 
 .projects {
     background-color:#262626;
     color: #D9D6D0;
     padding: 2em;
-    height: 100vh;
+    
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+
 }
 
 .projects hr {
@@ -126,14 +136,12 @@ footer {
 .skills {
     background-color: #262626;
     color: #D9D6D0;
-    height: 100vh;
     padding: 2em;
     line-height: 1.7em;
     
 }
 .projects img {
-    height: 300px;
-    width: 500px;
+    width: 400px;
     background-size: cover;
 }
 .skills hr{
@@ -141,28 +149,28 @@ footer {
     color: #262626;
 }
 .about {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 5em 3em;
     width: 100%;
-    height: 100vh;
-    font-size: 20px;
     background-color: #D9D6D0; 
     color: #262626;
+    text-align: justify;
+    line-height: 1.5em;
 }
+
+
 .awrapper {  
+    padding: 2em;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-
-
+    justify-content: space-evenly;
 }
+
+
 .awrapper img{
-    max-width: 40%;
+    max-width: 70%;;
 }
+
 .contact {
     background-color: #D9D6D0;
     color: #262626;
@@ -174,17 +182,34 @@ footer {
 .contact hr {
     width: 90%;
 }
+#top {
+    border-radius: 20px;
+    background-color: #262626;
+    color: #D9D6D0;
+    width: 50px;
+    padding: .5em;
+    margin: 2em;
+    
+}
 #email {
-    border-radius: 10px;
-    background-color: white;
-    color: black;
+    border-radius: 20px;
+    background-color: #262626;
+    color: #D9D6D0;
     width: 250px;
-    box-shadow: 5px 5px 5px black;
+    padding: .5em;
+    
 }
 
 @media (min-width: 600px) {
 
     /* GENERAL STYLES */
+
+    .skills{
+        height: 100vh;
+    }
+    .projects {
+        height: 100vh;
+    }
 
     /* CLASS STYLES */
     .project_wrap {
@@ -193,6 +218,11 @@ footer {
         justify-content: space-around;        
     }
     
+    .projects img {
+        
+        width: 500px;
+        background-size: cover;
+    }
     .skills{
         display: flex;
         flex-direction: column;
@@ -204,6 +234,9 @@ footer {
    }
     @media (min-width: 1100px) {
        
+        .about p {
+            padding: 5em;
+       }
     }
 
 }
