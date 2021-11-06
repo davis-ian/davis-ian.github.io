@@ -118,7 +118,7 @@ footer {
     background-color:#262626;
     color: #D9D6D0;
     padding: 2em;
-    
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
