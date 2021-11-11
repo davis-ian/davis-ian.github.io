@@ -121,7 +121,7 @@ footer {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 
 }
@@ -144,6 +144,10 @@ footer {
 .projects img {
     width: 400px;
     background-size: cover;
+}
+.project_wrap div {
+    
+    margin-bottom: 2em
 }
 .skills hr{
     width: 90%;
@@ -195,6 +199,9 @@ footer {
 .contact hr {
     width: 90%;
 }
+.git a {
+    font-size: 30px;
+}
 #top {
     border-radius: 20px;
     background-color: #262626;
@@ -216,7 +223,7 @@ footer {
 @media (min-width: 600px) {
 
     /* GENERAL STYLES */
-
+    /* CLASS STYLES */
     .skills{
         height: 100vh;
     }
@@ -224,10 +231,9 @@ footer {
         height: 100vh;
     }
 
-    /* CLASS STYLES */
     .project_wrap {
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: column;
         justify-content: space-around;        
     }
     
@@ -269,5 +275,16 @@ footer {
     }
     .awrapper {
         width: 50%
+    }
+   
+    .project_wrap {
+        display:flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+        
+    }
+    .project_wrap img {
+       width: 700px;
     }
 }
