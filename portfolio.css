@@ -186,6 +186,7 @@ footer {
     align-self: center;
 }
 
+
 .contact {
     background-color: #D9D6D0;
     color: #262626;
@@ -219,6 +220,12 @@ footer {
     padding: .5em;
     
 }
+#button_flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly
+}
+
 
 @media (min-width: 600px) {
 
