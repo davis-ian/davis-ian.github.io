@@ -233,21 +233,16 @@ footer {
     .skills{
         height: 100vh;
     }
-    .projects {
-        height: 100vh;
+    .projects img {
+        width: 600px
     }
 
     .project_wrap {
-        display: flex;
-        flex-flow: column;
-        justify-content: space-around;        
+        display: flex; 
+        flex-direction: column;
     }
     
-    .projects img {
-        
-        width: 500px;
-        background-size: cover;
-    }
+    
     .skills{
         display: flex;
         flex-direction: column;
@@ -281,16 +276,14 @@ footer {
     }
     .awrapper {
         width: 50%
-    }
-   
-    .project_wrap {
-        display:flex;
-        flex-direction: row;
-        width: 100%;
-        justify-content: space-evenly;
+    }    
+    .project img {
+        width: 1000px;
         
     }
-    .project_wrap img {
-       width: 700px;
+    .project {        
+        width: 1000px;
+        margin: 2em 0;   
     }
+    
 }
