@@ -17,36 +17,7 @@ gsap.from(".welcome p", {
     stagger: .2, 
     delay: .5
 })
-gsap.from(".skill1 h4", {
-    scrollTrigger: {
-        trigger:".skill1 h4",
-        toggleActions: "play complete pause none"
-    },
-    ease: "power2",
-    x:-500,
-    opacity: 0,
-    stagger: .2,
-})
-gsap.from(".skill2 h4", {
-    scrollTrigger: {
-        trigger:".skill1 h4",
-        toggleActions: "play complete pause none"
-    },
-    ease: "power2",
-    y:500,
-    opacity: 0,
-    stagger: .2,
-})
-gsap.from(".skill3 h4", {
-    scrollTrigger: {
-        trigger:".skill1 h4",
-        toggleActions: "play complete pause none"
-    },
-    ease: "power2",
-    x:500,
-    opacity: 0,
-    stagger: .2,
-})
+
 gsap.from(".awrapper", {
     scrollTrigger: {
         trigger:".awrapper",
@@ -71,6 +42,7 @@ gsap.from("#p2", {
     scrollTrigger: {
         trigger: "#p2",
         scrub: 1,
+        start: "top bottom",
         end: "20%",
     },
     ease: "power2",
