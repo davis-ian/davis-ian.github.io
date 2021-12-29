@@ -1,7 +1,7 @@
-function test() {
-    console.log("Hello")
-}
+
 gsap.registerPlugin(ScrollTrigger);
+
+
 
 gsap.from(".greet h1", {
     ease: "power4", 
@@ -51,6 +51,7 @@ gsap.from(".about .awrapper", {
     scrollTrigger: {
         trigger:".about .awrapper",
         scrub: 1,
+        end: "20%"
     },
     ease: "power2",
     x:-500,
@@ -60,6 +61,7 @@ gsap.from("#p1", {
     scrollTrigger: {
         trigger:"#p1",
         scrub: 1,
+        end: "20%"
     },
     ease: "power2",
     x:500,
@@ -69,6 +71,7 @@ gsap.from("#p2", {
     scrollTrigger: {
         trigger:"#p2",
         scrub: 1,
+        end: "20%"
     },
     ease: "power2",
     x:-500,
@@ -78,6 +81,7 @@ gsap.from("#p3", {
     scrollTrigger: {
         trigger:"#p3",
         scrub: 1,
+        end: "20%"
     },
     ease: "power2",
     x:500,
