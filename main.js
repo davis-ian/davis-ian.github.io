@@ -32,7 +32,6 @@ gsap.from("#p1", {
     scrollTrigger: {
         trigger: "#p1",
         scrub: 1,
-        end: "20%",
     },
     ease: "power2",
     x:500,
@@ -42,8 +41,6 @@ gsap.from("#p2", {
     scrollTrigger: {
         trigger: "#p2",
         scrub: 1,
-        start: "top bottom",
-        end: "20%",
     },
     ease: "power2",
     x:-500,
@@ -53,7 +50,6 @@ gsap.from("#p3", {
     scrollTrigger: {
         trigger: "#p3",
         scrub: 1,
-        end: "20%",
     },
     ease: "power2",
     x:500,
@@ -63,7 +59,6 @@ gsap.from(".contact h1", {
     scrollTrigger: {
         trigger: ".contact h1",
         toggleActions: "play complete pause none",
-        end: "20%",
     },
     ease: "power2",
     y:500,
