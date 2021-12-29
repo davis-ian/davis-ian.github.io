@@ -22,7 +22,6 @@ gsap.from(".awrapper", {
     scrollTrigger: {
         trigger:".awrapper",
         scrub: 1,
-        end: "20%",
     },
     ease: "power2",
     x:-500,
