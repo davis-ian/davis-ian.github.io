@@ -5,7 +5,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 gsap.from(".greet h1", {
     ease: "power4", 
-    x:500, 
+    xPercent: 70, 
     duration:2,
     opacity:0
 })
@@ -28,6 +28,7 @@ gsap.from(".awrapper", {
         scrub: 1,
         start: "top 80%",
         end: "bottom center",
+        markers: true
     },
     
 })
@@ -72,8 +73,11 @@ gsap.from("#p3", {
 })
 gsap.from(".contact h1", {
     scrollTrigger: {
-        trigger: ".contact h1",
-        scrub: 1       
+        trigger: ".contact",
+        scrub: 1,
+        start: "top bottom",
+        end: "center center",
+              
     },
     ease: "power2",
     y:500,
