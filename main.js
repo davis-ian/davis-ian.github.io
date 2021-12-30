@@ -28,7 +28,7 @@ gsap.from(".awrapper", {
         scrub: 1,
         start: "top 80%",
         end: "bottom center",
-        markers: true
+        
     },
     
 })
