@@ -73,7 +73,7 @@ gsap.from("#p3", {
 gsap.from(".contact h1", {
     scrollTrigger: {
         trigger: ".contact h1",
-        toggleActions: "play complete pause none",
+        scrub: 1       
     },
     ease: "power2",
     y:500,
