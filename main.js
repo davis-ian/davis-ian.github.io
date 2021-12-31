@@ -2,6 +2,20 @@
 gsap.registerPlugin(ScrollTrigger);
 
 function init() {
+    gsap.to('.greet h1', {
+        x: -300,
+        opacity: 1,
+        ease: "power2",
+        duration: 1.5,
+    })
+    gsap.to('.welcome p', {
+        y: -300,
+        opacity: 1,
+        stagger: .5,
+        duration: 1,
+        ease: "power2"
+    })
+
     gsap.to('.awrapper', {
         x: 300,
         opacity: 1,

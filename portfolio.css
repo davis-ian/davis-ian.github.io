@@ -207,6 +207,16 @@ footer {
 .git a {
     font-size: 30px;
 }
+.greet h1 {
+    position: relative;
+    left: 300px;
+    opacity: 0
+}
+.welcome p {
+    position: relative;
+    top: 300px;
+    opacity: 0;
+}
 #button_flex {
     display: flex;
     flex-direction: row;
