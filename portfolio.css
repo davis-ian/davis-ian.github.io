@@ -182,7 +182,7 @@ footer {
 }
 
 .awrapper {  
-    padding: 2em;    
+    padding:2em;    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -193,6 +193,7 @@ footer {
 
 
 .about img{
+    padding: 0 2em;
     max-width: 70%;
     align-self: center;
 }
@@ -207,6 +208,7 @@ footer {
     align-items: center;
     justify-content: center;
     height: 80vh;
+    padding-top: 4em
 }
 .contact hr {
     width: 90%;

@@ -31,7 +31,7 @@ function init() {
             trigger: '.awrapper',
             scrub: 1,
             start: "top bottom",
-            end: "center center",
+            end: "top center",
             
         }
     })
