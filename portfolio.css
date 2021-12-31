@@ -118,6 +118,7 @@ footer {
     background-color: #D9D6D0;
     padding-bottom: 1em;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 .welcome {
     height: 50vh;
