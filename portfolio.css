@@ -91,6 +91,18 @@ textarea {
     height: 300px;
     border-radius: 15px;
     padding: .5em;
+    border: none;
+    box-shadow: 0px 5px 10px gray;
+}
+textarea:focus {
+    outline-width: 0;
+}
+input {
+    border: none;
+    box-shadow: 0px 5px 10px gray;
+}
+input:focus {
+    outline-width: 0;
 }
 footer {
     text-align: left;
