@@ -254,6 +254,7 @@ footer {
     width: 120px;
     padding: .5em;
     align-self: center;
+    box-shadow: none;
     
 }
 #contact-form{
