@@ -170,14 +170,14 @@ footer {
 }
 
 .awrapper {  
-    padding: 2em;
-    
+    padding: 2em;    
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    
-    
+    position: relative;
+    right: 300px;
+    opacity: 0
 }
 
 
@@ -200,8 +200,17 @@ footer {
 .contact hr {
     width: 90%;
 }
+.contact h1 {
+    position: relative;
+    top: 300px
+}
 .git a {
     font-size: 30px;
+}
+#button_flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly
 }
 #top {
     border-radius: 20px;
@@ -220,12 +229,21 @@ footer {
     padding: .5em;
     
 }
-#button_flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly
+#p1 {
+    position: relative;
+    left: 500px;
+    opacity: 0
 }
-
+#p2 {
+    position: relative;
+    right: 500px;
+    opacity: 0
+}
+#p3 {
+    position: relative;
+    left: 500px;
+    opacity: 0
+}
 
 @media (min-width: 600px) {
 

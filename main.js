@@ -2,69 +2,58 @@
 gsap.registerPlugin(ScrollTrigger);
 
 function init() {
-    gsap.from('.greet h1', {
-        opacity: 0,
-        xPercent: 50,
-        duration: 2,
-        ease: "power2"
-    })
-    gsap.from('.welcome p', {
-        opacity: 0,
-        y: 200,
-        duration: 1,
-        ease: 'power2',
-        stagger: .5
-    })
-
-    gsap.from('.awrapper', {
-        opacity: 0, 
-        xPercent: -50,
+    gsap.to('.awrapper', {
+        x: 300,
+        opacity: 1,
         scrollTrigger: {
-        trigger:".awrapper",
-        scrub:1,
-        start: "top bottom",
-        end: "center center",
-    }})
-    gsap.from('#p1', {
-        opacity: 0, 
-        xPercent: 50,
-        scrollTrigger: {
-        trigger:"#p1",
-        scrub:1,
-        start: "top bottom",
-        end: "center center",
-    }})
-    gsap.from('#p2', {
-        opacity: 0, 
-        xPercent: -50,
-        scrollTrigger: {
-        trigger:"#p2",
-        scrub:1,
-        start: "top bottom",
-        end: "center center",
-    }})
-    gsap.from('#p3', {
-        opacity: 0, 
-        xPercent: 50,
-        scrollTrigger: {
-        trigger:"#p3",
-        scrub:1,
-        start: "top bottom",
-        end: "center center",
-    }})
-    gsap.from('.contact h1', {
-        opacity:0,
-        y: 500,
-        scrollTrigger: {
-            trigger: '.contact',
+            trigger: ".awrapper",
+            scrub: 1,
             start: "top bottom",
-            end: "center center",
-            scrub:1,
-            
+            end: "center center"
+        }
+    })
+    gsap.to('#p1', {
+        x: -500,
+        opacity: 1,
+        scrollTrigger: {
+            trigger: "#p1",
+            scrub: 1,
+            start: "top bottom",
+            end: "center center"
+        }
+    })
+    gsap.to('#p2', {
+        x: 500,
+        opacity: 1,
+        scrollTrigger: {
+            trigger: "#p2",
+            scrub: 1,
+            start: "top bottom",
+            end: "center center"
+        }
+    })
+    gsap.to('#p3', {
+        x: -500,
+        opacity: 1,
+        scrollTrigger: {
+            trigger: "#p3",
+            scrub: 1,
+            start: "top bottom",
+            end: "center center"
+        }
+    })
+    gsap.to('.contact h1', {
+        y: -300,
+        opacity: 1,
+        scrollTrigger: {
+            trigger: ".contact",
+            scrub: 1,
+            start: "top bottom",
+            end: "center center"
         }
     })
 }
 
 window.addEventListener('load', function() {
-    init()
+    init()    
 })
