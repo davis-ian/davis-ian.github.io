@@ -28,7 +28,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: "Raleway", sans-serif;  
-    overflow-x: hidden;
+    
      
 }
 header {
@@ -117,7 +117,7 @@ footer {
     height: 50vh;
     background-color: #D9D6D0;
     padding-bottom: 1em;
-    
+    overflow-x: hidden;
 }
 .welcome {
     height: 50vh;
@@ -151,12 +151,14 @@ footer {
     line-height: 1.7em;
     
 }
+.projects {
+    overflow-x: hidden;
+}
 .projects img {
     width: 400px;
     background-size: cover;
 }
 .project_wrap div {
-    
     margin-bottom: 2em
 }
 .skills hr{
@@ -185,7 +187,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    
+    overflow-x: hidden;
 }
 
 
@@ -243,8 +245,8 @@ footer {
     flex-direction: column;
     height: 50vh;
     width: 50vh;
-   justify-content: center;
-   text-align: left;
+    justify-content: center;
+    text-align: left;
 }
 
 
