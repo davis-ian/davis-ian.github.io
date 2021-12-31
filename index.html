@@ -14,6 +14,31 @@
     rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="portfolio.css" >
     <title>Ian Davis</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/integration
+            emailjs.init('user_WwYuQwcCPasTjv0mthHPq');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_4xg0wfh', 'contact_form', this)
+                    .then(function() {
+                        let form = document.getElementById("contact-form")
+                        form.reset()
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
 
 </head>
 
@@ -154,10 +179,22 @@
         <div class="contact" id="contact">
             <h1>Interested in working together?</h1>
             <h3>Shoot me a line!</h3>
-            <a href="mailto: contact@iandavs.com" id="email">Message <i class="fas fa-paper-plane"></i></a>
+            <form id="contact-form">
+                <input type="hidden" name="contact_number">
+                <br>
+                <input type="text" placeholder="Name" name="user_name">
+                <br>
+                <input type="email" placeholder="Email" name="user_email">
+                <br>
+                <textarea placeholder="Message" name="message"></textarea>
+                <br>
+                <input id="email" type="submit" value="Send">
+            </form>
+            <!-- <a href="mailto: contact@iandavs.com" id="email">Message <i class="fas fa-paper-plane"></i></a> -->
 
             <a href="#home" id="top"><i class="fas fa-angle-double-up"></i></a>
         </div>
+
         
 
 
@@ -165,6 +202,7 @@
     <footer>
         <p>Webpage created by Ian Davis <i class="fas fa-bolt"></i></p>
     </footer>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
     

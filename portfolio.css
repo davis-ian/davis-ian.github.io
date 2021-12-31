@@ -82,6 +82,16 @@ main h1 {
 main h2 {
     font-family: 'Merriweather', serif;
 }
+input {
+    border-radius: 10px;
+    padding: .5em;
+
+}
+textarea {
+    height: 300px;
+    border-radius: 15px;
+    padding: .5em;
+}
 footer {
     text-align: left;
     background-color: #D9D6D0;
@@ -175,9 +185,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    /* position: relative;
-    right: 300px;
-    opacity: 0 */
+    
 }
 
 
@@ -200,23 +208,11 @@ footer {
 .contact hr {
     width: 90%;
 }
-/* .contact h1 {
-    position: relative;
-    top: 300px
-} */
+
 .git a {
     font-size: 30px;
 }
-/* .greet h1 {
-    position: relative;
-    left: 300px;
-    opacity: 0
-} */
-/* .welcome p {
-    position: relative;
-    top: 300px;
-    opacity: 0;
-} */
+
 #button_flex {
     display: flex;
     flex-direction: row;
@@ -232,28 +228,25 @@ footer {
     
 }
 #email {
-    border-radius: 20px;
+    border-radius: 15px;
+    border: none;
     background-color: #262626;
     color: #D9D6D0;
     width: 120px;
     padding: .5em;
+    align-self: center;
     
 }
-/* #p1 {
-    position: relative;
-    left: 500px;
-    opacity: 0
+#contact-form{
+    
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    width: 50vh;
+   justify-content: center;
+   text-align: left;
 }
-#p2 {
-    position: relative;
-    right: 500px;
-    opacity: 0
-}
-#p3 {
-    position: relative;
-    left: 500px;
-    opacity: 0
-} */
+
 
 @media (min-width: 600px) {
 
