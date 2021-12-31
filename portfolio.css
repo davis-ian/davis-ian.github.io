@@ -51,6 +51,7 @@ header nav{
     width: 51%;
     height: 3em;
     position: fixed;
+    z-index: 1;
     background-color: #262626;
     display: flex;
     justify-content: space-evenly;
@@ -68,7 +69,7 @@ header .logo {
     align-items: center;
     color: #D9D6D0;
     padding-left: 2em;
-    
+    z-index: 1;
 }
 a {
     color: #D9D6D0;
