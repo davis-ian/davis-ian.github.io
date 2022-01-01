@@ -87,8 +87,110 @@ function init() {
             end: 'center center'
         }
     })
+
+    gsap.fromTo('#js', {
+        opacity: 0,
+    },{
+        opacity: 1,
+        scrollTrigger: {
+            trigger: '#js',
+            scrub: 1,
+            start: 'top bottom',
+            end: 'center center',
+           
+        }
+    })
+    gsap.fromTo('#py', {
+        opacity: 0,
+    },{
+        opacity: 1,
+        scrollTrigger: {
+            trigger: '#py',
+            scrub: 1,
+            start: 'top bottom',
+            end: 'center center',
+            
+        }
+    })
+    gsap.fromTo('#vue', {
+        opacity: 0,
+    },{
+        opacity: 1,
+        scrollTrigger: {
+            trigger: '#vue',
+            scrub: 1,
+            start: 'top bottom',
+            end: 'center center',
+            
+        }
+    })
+    gsap.fromTo('#dj', {
+        opacity: 0,
+    },{
+        opacity: 1,
+        scrollTrigger: {
+            trigger: '#dj',
+            scrub: 1,
+            start: 'top bottom',
+            end: 'center center',
+            
+        }
+    })
+    gsap.fromTo('#h5', {
+        opacity: 0,
+    },{
+        opacity: 1,
+        scrollTrigger: {
+            trigger: '#h5',
+            scrub: 1,
+            start: 'top bottom',
+            end: 'center center',
+            
+        }
+    })
+    gsap.fromTo('#c3', {
+        opacity: 0,
+    },{
+        opacity: 1,
+        scrollTrigger: {
+            trigger: '#c3',
+            scrub: 1,
+            start: 'top bottom',
+            end: 'center center',
+            
+        }
+    })
+    gsap.fromTo('#gh', {
+        opacity: 0,
+    },{
+        opacity: 1,
+        scrollTrigger: {
+            trigger: '#gh',
+            scrub: 1,
+            start: 'top bottom',
+            end: 'center center',
+            
+        }
+    })
+
+    gsap.fromTo('#menu', {
+        color:'#262626',
+    },{
+        color: '#D9D6D0',
+        scrollTrigger: {
+            trigger: '.skills h1',
+            scrub: 1,
+            
+        }
+    })
 }
-   
+
+function openNav() {
+    document.getElementById("mySidenav").style.width="100%"
+}
+function closeNav() {
+    document.getElementById("mySidenav").style.width="0"
+}
 
 window.addEventListener('load', function() {
     init()    

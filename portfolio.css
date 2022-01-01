@@ -16,20 +16,13 @@ img {
     max-width: 100%;
     border-radius: 15px;;
 }
-header h1 {
-    font-family: 'Amarante';
-    color: #262626;
-    font-size: 150px;
-    margin: 0;
-    line-height: 80%;
-}
 body {
     text-align: center;
     padding: 0;
     margin: 0;
     font-family: "Raleway", sans-serif;  
     
-     
+    
 }
 header {
     display: flex;
@@ -39,13 +32,7 @@ header {
     
 }
 
-header p {
-    font-family: 'Raleway', sans-serif;
-    font-size: 25px;
-    
-    color: #262626;
-}
-
+/* 
 header nav{
     align-self: flex-end;
     width: 51%;
@@ -56,8 +43,40 @@ header nav{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-
+    
+} */
+.sidenav {
+    background-color: #262626;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
 }
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #D9D6D0;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav a:hover{
+    color: #818181;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
 header .logo {
     align-self: flex-start;
     width: 50%;
@@ -71,11 +90,11 @@ header .logo {
     padding-left: 2em;
     z-index: 1;
 }
-a {
+/* a {
     color: #D9D6D0;
     text-decoration: none;
     font-family: 'Merriweather', serif;
-}
+} */
 
 main h1 {
     font-family: 'Merriweather', serif;
@@ -86,8 +105,9 @@ main h2 {
 input {
     border-radius: 10px;
     padding: .5em;
-
+    
 }
+
 textarea {
     height: 300px;
     border-radius: 15px;
@@ -114,8 +134,35 @@ footer {
 
 
 /* CLASS STYLES */
+.home{
+    
+    height: 100vh;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #D9D6D0;
+    overflow: hidden;
+}
+
+.home h1 {
+    font-family: 'Amarante';
+    color: #262626;
+    font-size: 150px;
+    margin: 0;
+    line-height: 80%;
+}
+.home p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;    
+    color: #262626;
+}
 
 
+.about h1 {
+    text-align: center;
+}
 .project_wrap a {
     color: #262626;
     border-radius: 10px;
@@ -123,7 +170,7 @@ footer {
     align-self: center;
     background-color: #D9D6D0; 
 }
-.greet {
+/* .greet {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -132,12 +179,12 @@ footer {
     padding-bottom: 1em;
     overflow-x: hidden;
     overflow-y: hidden;
-}
-.welcome {
+} */
+/* .welcome {
     height: 50vh;
     background-color: #D9D6D0;
    
-}
+} */
 
 .projects {
     background-color:#262626;
@@ -162,7 +209,7 @@ footer {
     background-color: #262626;
     color: #D9D6D0;
     padding: 2em;
-    line-height: 1.7em;
+    height: 100vh;
     
 }
 .projects {
@@ -181,7 +228,6 @@ footer {
 }
 .about {
     width: 100%;
-    height: 100vh;
     background-color: #D9D6D0; 
     color: #262626;
     text-align: justify;
@@ -190,9 +236,6 @@ footer {
     flex-direction: column;
     justify-content: center;
    
-}
-.about h1 {
-    text-align: center;
 }
 
 .awrapper {  
@@ -230,6 +273,20 @@ footer {
 
 .git a {
     font-size: 30px;
+}
+svg {
+    fill: #D9D6D0;
+    height: 7em;
+    margin: 1em;
+}
+
+#menu {
+    width: 100%;
+    font-size: 30px;
+    text-align: right;
+    position: fixed;
+    padding: .5em;
+    color: #262626;
 }
 
 #button_flex {
