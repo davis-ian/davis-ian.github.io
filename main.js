@@ -183,6 +183,36 @@ function init() {
             
         }
     })
+    gsap.fromTo('#menu', {
+        color:'#D9D6D0',
+    },{
+        color: '#262626',
+        scrollTrigger: {
+            trigger: '.about img',
+            scrub: 1,
+            
+        }
+    })
+    gsap.fromTo('#menu', {
+        color:'#262626',
+    },{
+        color: '#D9D6D0',
+        scrollTrigger: {
+            trigger: '.projects h1',
+            scrub: 1,
+            
+        }
+    })
+    gsap.fromTo('#menu', {
+        color:'#D9D6D0',
+    },{
+        color: '#262626',
+        scrollTrigger: {
+            trigger: '.contact h1',
+            scrub: 1,
+            
+        }
+    })
 }
 
 function openNav() {

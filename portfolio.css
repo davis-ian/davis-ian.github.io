@@ -56,6 +56,9 @@ header nav{
     overflow-x: hidden;
     padding-top: 60px;
     transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .sidenav a {
@@ -65,6 +68,7 @@ header nav{
     color: #D9D6D0;
     display: block;
     transition: 0.3s;
+    line-height: 3em;
 }
 .sidenav a:hover{
     color: #818181;
@@ -273,6 +277,7 @@ footer {
 
 .git a {
     font-size: 30px;
+    color: #D9D6D0
 }
 svg {
     fill: #D9D6D0;
@@ -331,6 +336,14 @@ svg {
     /* CLASS STYLES */
     .skills{
         height: 100vh;
+        display: flex;
+        flex-direction: row;
+        
+        border: 2px solid yellow
+    }
+    .skills svg {
+        border: 2px solid red;
+        width: 33%
     }
     .projects img {
         width: 600px
