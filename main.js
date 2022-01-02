@@ -172,7 +172,13 @@ function init() {
             
         }
     })
-
+    gsap.fromTo('#menu', {
+        opacity: 0,
+    },{
+        opacity: 1,
+        color: '#262626',
+        duration: 1,
+    })
     gsap.fromTo('#menu', {
         color:'#262626',
     },{
