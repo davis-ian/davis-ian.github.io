@@ -363,6 +363,7 @@ svg {
    }
    .about {
        flex-direction: row-reverse;
+       height: 100vh;
    }
    .about img {
        width: 50%;
