@@ -1,94 +1,161 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Redirecting...</title>
+    <script type="text/javascript">
+      window.location.href = "https://iandavis.dev/";
+    </script>
 
-<head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/49d1c1eed7.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="normalize.css">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script
+      src="https://kit.fontawesome.com/49d1c1eed7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="normalize.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-    href="https://fonts.googleapis.com/css2?family=Amarante&family=Merriweather:ital,wght@0,400;0,700;1,400&family=Raleway&display=swap"
-    rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="portfolio.css" >
+      href="https://fonts.googleapis.com/css2?family=Amarante&family=Merriweather:ital,wght@0,400;0,700;1,400&family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="portfolio.css" />
     <title>Ian Davis</title>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
     <script type="text/javascript">
-        (function() {
-            // https://dashboard.emailjs.com/admin/integration
-            emailjs.init('user_WwYuQwcCPasTjv0mthHPq');
-        })();
+      (function () {
+        // https://dashboard.emailjs.com/admin/integration
+        emailjs.init("user_WwYuQwcCPasTjv0mthHPq");
+      })();
     </script>
     <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                // generate a five digit number for the contact_number variable
-                this.contact_number.value = Math.random() * 100000 | 0;
-                // these IDs from the previous steps
-                emailjs.sendForm('service_4xg0wfh', 'contact_form', this)
-                    .then(function() {
-                        let form = document.getElementById("contact-form")
-                        form.reset()
-                        console.log('SUCCESS!');
-                    }, function(error) {
-                        console.log('FAILED...', error);
-                    });
-            });
-        }
+      window.onload = function () {
+        document
+          .getElementById("contact-form")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+            // generate a five digit number for the contact_number variable
+            this.contact_number.value = (Math.random() * 100000) | 0;
+            // these IDs from the previous steps
+            emailjs.sendForm("service_4xg0wfh", "contact_form", this).then(
+              function () {
+                let form = document.getElementById("contact-form");
+                form.reset();
+                console.log("SUCCESS!");
+              },
+              function (error) {
+                console.log("FAILED...", error);
+              }
+            );
+          });
+      };
     </script>
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <header>
-        <!-- <div class="logo">
+      <!-- <div class="logo">
             <h4>iandavs.com</h4>
         </div>-->
-        <div class="sidenav" id="mySidenav">
-            <a href="javascript:void(0)" class="closebtn" onClick="closeNav()">&times;</a>
-            <a href="#skills" onClick="closeNav()">Skills</a>
-            <a href="#about" onClick="closeNav()">About</a>
-            <a href="#projects" onClick="closeNav()">Projects</a>
-            <a href="#contact" onClick="closeNav()">Contact</a> 
-            
-        </div>
-
-        
+      <div class="sidenav" id="mySidenav">
+        <a href="javascript:void(0)" class="closebtn" onClick="closeNav()"
+          >&times;</a
+        >
+        <a href="#home" onClick="closeNav()">Home</a>
+        <a href="#skills" onClick="closeNav()">Skills</a>
+        <a href="#about" onClick="closeNav()">About</a>
+        <a href="#projects" onClick="closeNav()">Projects</a>
+        <a href="#contact" onClick="closeNav()">Contact</a>
+      </div>
     </header>
-    
-    <main>
-        <div id="menu">
-            <span onClick="openNav()"><i class="fas fa-bars"></i></span>
-        </div>
-        <div class="home" id="home">
-            <div class="greet">
-                <h1>IAN DAVIS</h1>
-            </div>            
-            <div class='welcome'>
-                <p>Full-Stack Developer with a passion for design.</p>
-                <p>Welcome to my portfolio.</p>
-            </div>
-        </div>
-        
-        
-        <div class="skills" id="skills">
 
-            <h1>Skills</h1>
-            <!-- <img src="javascript.png" alt="javascript"> -->
-            <div>
-            <svg id="js" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M-176 40.001h-80v212.498c0 52.58-18.032 67.261-49.412 67.261-14.705 0-27.948-2.521-38.25-6.063L-352 375.904c14.7 5.062 37.259 8.096 54.907 8.096C-225.045 384-176 350.129-176 253.02V40.001zM-1.537 32C-78.98 32-128 75.998-128 134.154c0 50.083 37.751 81.44 92.641 101.665 39.7 14.158 55.392 26.808 55.392 47.539 0 22.756-18.139 37.425-52.448 37.425-31.863 0-60.789-10.64-80.394-21.255v-.021L-128 362.727c18.639 10.638 53.441 21.255 91.167 21.255C53.854 383.98 96 335.43 96 278.284c0-48.55-26.958-79.9-85.278-102.163-43.139-17.191-61.27-26.795-61.27-48.542 0-17.2 15.688-32.869 48.043-32.869 31.846 0 53.744 10.707 66.505 17.291l19.125-64C63.125 39.22 36.188 32-1.537 32z" transform="translate(384 48)"/></svg>
-            <svg id="py" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m11.727 0c-.967.001-1.914.086-2.834.248l.098-.014c-2.423.428-2.862 1.324-2.862 2.976v2.182h5.726v.727h-7.874c-.02 0-.043-.001-.066-.001-1.737 0-3.184 1.239-3.507 2.881l-.004.023c-.256.872-.403 1.874-.403 2.91s.147 2.038.422 2.985l-.019-.076c.407 1.695 1.379 2.902 3.04 2.902h1.969v-2.616c.045-1.953 1.622-3.523 3.574-3.557h.003 5.719c1.584-.013 2.863-1.299 2.863-2.885 0-.009 0-.017 0-.026v.001-5.452c-.104-1.561-1.314-2.81-2.848-2.975l-.014-.001c-.866-.149-1.863-.234-2.879-.234-.036 0-.071 0-.107 0h.005zm-3.096 1.755h.017c.603 0 1.091.489 1.091 1.091s-.489 1.091-1.091 1.091c-.601 0-1.089-.487-1.091-1.088 0-.002 0-.005 0-.008 0-.596.48-1.08 1.074-1.086h.001z"/><path d="m18.287 6.119v2.542c-.022 1.977-1.604 3.578-3.572 3.63h-.005-5.719c-1.584.033-2.856 1.322-2.862 2.909v5.453c0 1.551 1.349 2.464 2.862 2.91.855.277 1.839.437 2.86.437s2.005-.16 2.927-.456l-.068.019c1.44-.417 2.862-1.258 2.862-2.91v-2.184h-5.719v-.727h8.582c1.664 0 2.284-1.161 2.863-2.902.28-.87.441-1.871.441-2.91s-.161-2.04-.46-2.979l.019.07c-.411-1.656-1.2-2.902-2.863-2.902zm-3.216 13.807h.017c.603 0 1.091.489 1.091 1.091s-.489 1.091-1.091 1.091c-.603 0-1.091-.489-1.091-1.091 0-.001 0-.003 0-.004 0-.002 0-.005 0-.007 0-.595.48-1.077 1.074-1.08z"/></svg>
-            <svg id="vue" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24"><path d="M18.03079,2.44284V2.44278l-.15448.00006-.84552-.00006-.00012.00024-2.64319.00055L12.01321,6.39951,9.62961,2.44357l-2.64594-.001-.00024-.00037H2.2717v.00055L.83231,2.44266,12.029,21.55777,23.16769,2.443ZM12.02505,17.59293,4.322,4.44223H7.14566l4.88562,8.4071,4.8468-8.4071h2.80939Z"/></svg>
-            <svg id="dj" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24"><path d="M21.25,6.06V6.059h-3.897v7.747c0,3.414-0.177,4.714-0.734,5.835c-0.531,1.096-1.367,1.81-3.088,2.625L17.15,24c1.721-0.866,2.556-1.656,3.189-2.905c0.683-1.299,0.911-2.803,0.911-5.937V6.06z"/><path d="M15.049,18.166V0h-3.897v5.984C10.57,5.831,10.089,5.78,9.457,5.78c-4.075,0-6.707,2.599-6.707,6.6c0,4.154,2.48,6.32,7.238,6.32C11.582,18.701,13.05,18.548,15.049,18.166z M6.723,12.304c0-2.141,1.138-3.364,3.113-3.364H9.832C9.86,8.938,9.887,8.938,9.914,8.938c0.443,0,0.868,0.075,1.237,0.205v6.294c-0.556,0.077-0.911,0.102-1.341,0.102C7.812,15.54,6.723,14.394,6.723,12.304z"/><rect width="3.897" height="4.026" x="17.353" y=".021"/></svg>
-            <svg id="h5" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24"><path d="M3.1825,2.00012,4.78735,20.00079l7.20191,1.99933,7.22168-2.00207L20.8175,2.00012ZM17.32507,7.88739H8.87683l.20178,2.26074h8.04554l-.60584,6.778L12,18.17834v.00043l-.01013.00275L7.46753,16.92615,7.1582,13.45972H9.37439l.1571,1.76074,2.45874.66388.00208-.00049v-.00018l2.46228-.66461.25635-2.86323H7.05957L6.46411,5.67969h11.0586Z"/></svg>
-            <svg id="c3" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24"><path d="M22,3l-3,15.1l-9.1,3l-7.9-3L2.8,14h3.4l-0.4,1.7l4.8,1.8l5.5-1.8l0.8-3.8H3.2l0.7-3.4h13.6L18,6.4H4.3L5,3H22z"/></svg>
-            <svg id="gh" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M7.999 0C3.582 0 0 3.596 0 8.032a8.031 8.031 0 0 0 5.472 7.621c.4.074.546-.174.546-.387 0-.191-.007-.696-.011-1.366-2.225.485-2.695-1.077-2.695-1.077-.363-.928-.888-1.175-.888-1.175-.727-.498.054-.488.054-.488.803.057 1.225.828 1.225.828.714 1.227 1.873.873 2.329.667.072-.519.279-.873.508-1.074-1.776-.203-3.644-.892-3.644-3.969 0-.877.312-1.594.824-2.156-.083-.203-.357-1.02.078-2.125 0 0 .672-.216 2.2.823a7.633 7.633 0 0 1 2.003-.27 7.65 7.65 0 0 1 2.003.271c1.527-1.039 2.198-.823 2.198-.823.436 1.106.162 1.922.08 2.125.513.562.822 1.279.822 2.156 0 3.085-1.87 3.764-3.652 3.963.287.248.543.738.543 1.487 0 1.074-.01 1.94-.01 2.203 0 .215.144.465.55.386A8.032 8.032 0 0 0 16 8.032C16 3.596 12.418 0 7.999 0z"/></svg>
-            </div>
-            <!-- <hr>
+    <main>
+      <div id="menu">
+        <span onClick="openNav()"><i class="fas fa-bars"></i></span>
+      </div>
+      <div class="home" id="home">
+        <div class="greet">
+          <h1>IAN DAVIS</h1>
+        </div>
+        <div class="welcome">
+          <p>Full-Stack Developer with a passion for design.</p>
+          <p>Welcome to my portfolio.</p>
+        </div>
+      </div>
+
+      <div class="skills" id="skills">
+        <h1>Skills</h1>
+        <!-- <img src="javascript.png" alt="javascript"> -->
+        <div>
+          <svg id="js" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path
+              d="M-176 40.001h-80v212.498c0 52.58-18.032 67.261-49.412 67.261-14.705 0-27.948-2.521-38.25-6.063L-352 375.904c14.7 5.062 37.259 8.096 54.907 8.096C-225.045 384-176 350.129-176 253.02V40.001zM-1.537 32C-78.98 32-128 75.998-128 134.154c0 50.083 37.751 81.44 92.641 101.665 39.7 14.158 55.392 26.808 55.392 47.539 0 22.756-18.139 37.425-52.448 37.425-31.863 0-60.789-10.64-80.394-21.255v-.021L-128 362.727c18.639 10.638 53.441 21.255 91.167 21.255C53.854 383.98 96 335.43 96 278.284c0-48.55-26.958-79.9-85.278-102.163-43.139-17.191-61.27-26.795-61.27-48.542 0-17.2 15.688-32.869 48.043-32.869 31.846 0 53.744 10.707 66.505 17.291l19.125-64C63.125 39.22 36.188 32-1.537 32z"
+              transform="translate(384 48)"
+            />
+          </svg>
+          <svg id="py" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              d="m11.727 0c-.967.001-1.914.086-2.834.248l.098-.014c-2.423.428-2.862 1.324-2.862 2.976v2.182h5.726v.727h-7.874c-.02 0-.043-.001-.066-.001-1.737 0-3.184 1.239-3.507 2.881l-.004.023c-.256.872-.403 1.874-.403 2.91s.147 2.038.422 2.985l-.019-.076c.407 1.695 1.379 2.902 3.04 2.902h1.969v-2.616c.045-1.953 1.622-3.523 3.574-3.557h.003 5.719c1.584-.013 2.863-1.299 2.863-2.885 0-.009 0-.017 0-.026v.001-5.452c-.104-1.561-1.314-2.81-2.848-2.975l-.014-.001c-.866-.149-1.863-.234-2.879-.234-.036 0-.071 0-.107 0h.005zm-3.096 1.755h.017c.603 0 1.091.489 1.091 1.091s-.489 1.091-1.091 1.091c-.601 0-1.089-.487-1.091-1.088 0-.002 0-.005 0-.008 0-.596.48-1.08 1.074-1.086h.001z"
+            />
+            <path
+              d="m18.287 6.119v2.542c-.022 1.977-1.604 3.578-3.572 3.63h-.005-5.719c-1.584.033-2.856 1.322-2.862 2.909v5.453c0 1.551 1.349 2.464 2.862 2.91.855.277 1.839.437 2.86.437s2.005-.16 2.927-.456l-.068.019c1.44-.417 2.862-1.258 2.862-2.91v-2.184h-5.719v-.727h8.582c1.664 0 2.284-1.161 2.863-2.902.28-.87.441-1.871.441-2.91s-.161-2.04-.46-2.979l.019.07c-.411-1.656-1.2-2.902-2.863-2.902zm-3.216 13.807h.017c.603 0 1.091.489 1.091 1.091s-.489 1.091-1.091 1.091c-.603 0-1.091-.489-1.091-1.091 0-.001 0-.003 0-.004 0-.002 0-.005 0-.007 0-.595.48-1.077 1.074-1.08z"
+            />
+          </svg>
+          <svg
+            id="vue"
+            xmlns="http://www.w3.org/2000/svg"
+            data-name="Layer 1"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M18.03079,2.44284V2.44278l-.15448.00006-.84552-.00006-.00012.00024-2.64319.00055L12.01321,6.39951,9.62961,2.44357l-2.64594-.001-.00024-.00037H2.2717v.00055L.83231,2.44266,12.029,21.55777,23.16769,2.443ZM12.02505,17.59293,4.322,4.44223H7.14566l4.88562,8.4071,4.8468-8.4071h2.80939Z"
+            />
+          </svg>
+          <svg
+            id="dj"
+            xmlns="http://www.w3.org/2000/svg"
+            enable-background="new 0 0 24 24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M21.25,6.06V6.059h-3.897v7.747c0,3.414-0.177,4.714-0.734,5.835c-0.531,1.096-1.367,1.81-3.088,2.625L17.15,24c1.721-0.866,2.556-1.656,3.189-2.905c0.683-1.299,0.911-2.803,0.911-5.937V6.06z"
+            />
+            <path
+              d="M15.049,18.166V0h-3.897v5.984C10.57,5.831,10.089,5.78,9.457,5.78c-4.075,0-6.707,2.599-6.707,6.6c0,4.154,2.48,6.32,7.238,6.32C11.582,18.701,13.05,18.548,15.049,18.166z M6.723,12.304c0-2.141,1.138-3.364,3.113-3.364H9.832C9.86,8.938,9.887,8.938,9.914,8.938c0.443,0,0.868,0.075,1.237,0.205v6.294c-0.556,0.077-0.911,0.102-1.341,0.102C7.812,15.54,6.723,14.394,6.723,12.304z"
+            />
+            <rect width="3.897" height="4.026" x="17.353" y=".021" />
+          </svg>
+          <svg
+            id="h5"
+            xmlns="http://www.w3.org/2000/svg"
+            data-name="Layer 1"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M3.1825,2.00012,4.78735,20.00079l7.20191,1.99933,7.22168-2.00207L20.8175,2.00012ZM17.32507,7.88739H8.87683l.20178,2.26074h8.04554l-.60584,6.778L12,18.17834v.00043l-.01013.00275L7.46753,16.92615,7.1582,13.45972H9.37439l.1571,1.76074,2.45874.66388.00208-.00049v-.00018l2.46228-.66461.25635-2.86323H7.05957L6.46411,5.67969h11.0586Z"
+            />
+          </svg>
+          <svg
+            id="c3"
+            xmlns="http://www.w3.org/2000/svg"
+            enable-background="new 0 0 24 24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M22,3l-3,15.1l-9.1,3l-7.9-3L2.8,14h3.4l-0.4,1.7l4.8,1.8l5.5-1.8l0.8-3.8H3.2l0.7-3.4h13.6L18,6.4H4.3L5,3H22z"
+            />
+          </svg>
+          <svg id="gh" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+            <path
+              d="M7.999 0C3.582 0 0 3.596 0 8.032a8.031 8.031 0 0 0 5.472 7.621c.4.074.546-.174.546-.387 0-.191-.007-.696-.011-1.366-2.225.485-2.695-1.077-2.695-1.077-.363-.928-.888-1.175-.888-1.175-.727-.498.054-.488.054-.488.803.057 1.225.828 1.225.828.714 1.227 1.873.873 2.329.667.072-.519.279-.873.508-1.074-1.776-.203-3.644-.892-3.644-3.969 0-.877.312-1.594.824-2.156-.083-.203-.357-1.02.078-2.125 0 0 .672-.216 2.2.823a7.633 7.633 0 0 1 2.003-.27 7.65 7.65 0 0 1 2.003.271c1.527-1.039 2.198-.823 2.198-.823.436 1.106.162 1.922.08 2.125.513.562.822 1.279.822 2.156 0 3.085-1.87 3.764-3.652 3.963.287.248.543.738.543 1.487 0 1.074-.01 1.94-.01 2.203 0 .215.144.465.55.386A8.032 8.032 0 0 0 16 8.032C16 3.596 12.418 0 7.999 0z"
+            />
+          </svg>
+        </div>
+        <!-- <hr>
             <div class='skillswrap'>
                 <div class='skill1'>
                     <h2>Experience</h2>
@@ -124,103 +191,103 @@
                 </div>
             </div>
             <hr> -->
+      </div>
+      <div class="about" id="about">
+        <img src="nash1.png" alt="nash1" />
+        <div class="awrapper">
+          <h1>About Me</h1>
+          <p>
+            I'm a Full-Stack Developer currently located in Dallas, Tx. Before
+            finding my passion in web development, I studied graphic design and
+            understand the impact a great design can have. I strive to deliver
+            products where development and design come together to provide
+            intuitive UX with streamlined programs. As an aircraft mechanic, I
+            learned to sharpen my attention to detail and I use that skill
+            everyday to tackle any problems that need solving. If I'm not
+            grinding through code, I can be found laying down some tasty licks
+            on my guitar or exploring the city.
+          </p>
         </div>
-        <div class="about" id="about">
-            <img src="nash1.png" alt="nash1">
-            <div class="awrapper">
+      </div>
+      <div class="projects" id="projects">
+        <h1>Here's what I've been working on</h1>
 
-                <h1>About Me</h1>
-                <p>
-                    I'm a Full-Stack Developer currently located in Dallas, Tx.
-                    Before finding my passion in web development, I studied graphic design and understand the impact a
-                    great design can have.
-                    I strive to deliver products where development and design come together to provide intuitive UX with
-                    streamlined programs.
-                    As an aircraft mechanic, I learned to sharpen my attention to detail and I use that skill everyday
-                    to
-                    tackle any problems that need solving. If I'm not grinding through code, I can be found laying down
-                    some tasty licks
-                    on my guitar or exploring the city.
-                </p>
-
+        <div class="project_wrap">
+          <div class="project" id="p1">
+            <img src="lifttrackr_pic.png" alt="lifttrackr" />
+            <br />
+            <div id="button_flex">
+              <a href="https://lifttrackr.herokuapp.com/"
+                ><i class="fas fa-rocket"></i
+              ></a>
+              <a href="https://github.com/davis-ian/lift-trackr"
+                ><i class="fas fa-code"></i
+              ></a>
             </div>
-        </div>
-        <div class="projects" id="projects">
-            <h1>Here's what I've been working on</h1>
+          </div>
 
-            <div class="project_wrap">
-                <div class="project" id="p1">
-                    <img src="lifttrackr_pic.png" alt="lifttrackr" />
-                    <br>
-                    <div id="button_flex">
-                        <a href="https://lifttrackr.herokuapp.com/"><i class="fas fa-rocket"></i></a>                    
-                        <a href="https://github.com/davis-ian/lift-trackr"><i
-                                class="fas fa-code"></i></a>
-                    </div>
-                </div>
-
-                <div class="project" id="p2">
-                    <img src="Shorty6.png" alt="shorty" >
-                    <br>
-                    <div id="button_flex">
-                        <a href="https://shorty-url-app.herokuapp.com/"><i class="fas fa-rocket"></i></a>                    
-                        <a href="https://github.com/davis-ian/shorty"><i
-                                class="fas fa-code"></i></a>
-                    </div>
-                </div>
-
-                <div class="project" id="p3">
-                    <img src="chirp6.png" alt="chirp">
-                    <br>
-                    <div id="button_flex">
-                        <a href="https://chirp-blog.herokuapp.com/"><i class="fas fa-rocket"></i></a>                    
-                        <a href="https://github.com/davis-ian/chirp"><i
-                                class="fas fa-code"></i></a>
-                    </div>
-                </div>
-
+          <div class="project" id="p2">
+            <img src="Shorty6.png" alt="shorty" />
+            <br />
+            <div id="button_flex">
+              <a href="https://shorty-url-app.herokuapp.com/"
+                ><i class="fas fa-rocket"></i
+              ></a>
+              <a href="https://github.com/davis-ian/shorty"
+                ><i class="fas fa-code"></i
+              ></a>
             </div>
-            
-            <div class="git">
-                <a href="https://github.com/PdxCodeGuild/class_sturgeon/tree/main/code/ian"><i
-                        class="fab fa-github"></i></a>
-                <p>The rest of my work can be found on GitHub</p>
+          </div>
+
+          <div class="project" id="p3">
+            <img src="chirp6.png" alt="chirp" />
+            <br />
+            <div id="button_flex">
+              <a href="https://chirp-blog.herokuapp.com/"
+                ><i class="fas fa-rocket"></i
+              ></a>
+              <a href="https://github.com/davis-ian/chirp"
+                ><i class="fas fa-code"></i
+              ></a>
             </div>
+          </div>
         </div>
 
-
-
-        <div class="contact" id="contact">
-            
-            <h1>Interested in working together?</h1>
-            <h3>Shoot me a line!</h3>
-            <form id="contact-form">
-                <input type="hidden" name="contact_number">
-                <br>
-                <input type="text" placeholder="Name" name="user_name">
-                <br>
-                <input type="email" placeholder="Email" name="user_email">
-                <br>
-                <textarea placeholder="Message" name="message"></textarea>
-                <br>
-                <input id="email" type="submit" value="Send">
-            </form>
-            <!-- <a href="mailto: contact@iandavs.com" id="email">Message <i class="fas fa-paper-plane"></i></a> -->
-
-            <a href="#home" id="top"><i class="fas fa-angle-double-up"></i></a>
+        <div class="git">
+          <a
+            href="https://github.com/PdxCodeGuild/class_sturgeon/tree/main/code/ian"
+            ><i class="fab fa-github"></i
+          ></a>
+          <p>The rest of my work can be found on GitHub</p>
         </div>
+      </div>
 
-        
+      <div class="contact" id="contact">
+        <h1>Interested in working together?</h1>
+        <h3>Shoot me a line!</h3>
+        <form id="contact-form">
+          <input type="hidden" name="contact_number" />
+          <br />
+          <input type="text" placeholder="Name" name="user_name" />
+          <br />
+          <input type="email" placeholder="Email" name="user_email" />
+          <br />
+          <textarea placeholder="Message" name="message"></textarea>
+          <br />
+          <input id="email" type="submit" value="Send" />
+        </form>
+        <!-- <a href="mailto: contact@iandavs.com" id="email">Message <i class="fas fa-paper-plane"></i></a> -->
 
-
+        <a href="#home" id="top"><i class="fas fa-angle-double-up"></i></a>
+      </div>
     </main>
     <footer>
-        <p>Webpage created by Ian Davis <i class="fas fa-bolt"></i></p>
+      <p>Webpage created by Ian Davis <i class="fas fa-bolt"></i></p>
     </footer>
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"></script>
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
